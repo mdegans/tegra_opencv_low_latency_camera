@@ -1,5 +1,8 @@
 # `tollc` low latency OpenCV CSI camera context for Jetson boards
 
+[![codecov](https://codecov.io/gh/mdegans/tegra_opencv_low_latency_camera/branch/main/graph/badge.svg?token=ihkYw5SNxY)](https://codecov.io/gh/mdegans/tegra_opencv_low_latency_camera)
+
+
 Provides a simple context manager for opening the CSI camera and using GStreamer
 and OpenCV to capture frames. It:
 
