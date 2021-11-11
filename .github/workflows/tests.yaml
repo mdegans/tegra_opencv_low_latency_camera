@@ -1,0 +1,17 @@
+name: tegra_opencv_low_latency_camera
+
+on: [push, pull_request]
+
+jobs:
+  codecov-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./cov.xml
+          flags: unittests
+          name: codecov-tollc
+          fail_ci_if_error: true
+          verbose: true
